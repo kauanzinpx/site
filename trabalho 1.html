@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>site joao</title>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* Impede o scroll da página */
+    }
+
+    header {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 4px solid rgb(255, 255, 255); /* Linha separando o topo das laterais */
+        z-index: 2;
+        position: relative;
+    }
+
+    .um, .dois, .tres, .quatro {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        margin: 0;
+        padding: 20px;
+        font-size: 1.5rem;
+        flex: 1;
+        border-right: 4px solid rgb(255, 255, 255);
+    }
+
+    .um {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .dois {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .tres {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .quatro {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .vertical-left, .vertical-right {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 5%;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .vertical-left {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vertical-right {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        border-left: 4px solid rgb(255, 255, 255); /* Linha vertical à direita */
+    }
+
+    .vertical-left > div, .vertical-right > div {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ddd;
+        margin: 0;
+        padding: 20px;
+        font-size: 1.5rem;
+        flex: 1;
+        border-bottom: 4px solid rgb(255, 255, 255);
+    }
+
+    .vertical-left .um {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .vertical-left .dois {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .vertical-left .tres {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .vertical-right .um {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .vertical-right .dois {
+        background-color: rgb(255, 0, 204);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        border-top: 4px solid rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        z-index: 2;
+    }
+
+    footer > div {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ddd;
+        margin: 0;
+        padding: 20px;
+        font-size: 1.5rem;
+        flex: 1;
+        border-right: 4px solid rgb(255, 255, 255);
+    }
+
+    footer .um {
+        background-color: rgb(255, 0, 204);
+    }
+
+    footer .dois {
+        background-color: rgb(255, 0, 204);
+    }
+
+    footer .tres {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .meio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; /* Ajustado para ocupar toda a tela */
+    }
+
+    .meio-superior {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 4px solid rgb(255, 255, 255); /* Linha horizontal entre a parte superior e inferior */
+    }
+
+    .meio-inferior {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .meio-superior > div, .meio-inferior > div {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ddd;
+        margin: 0;
+        padding: 200px;
+        font-size: 1.8rem;
+        flex: 1;
+        border-right: 4px solid rgb(255, 255, 255);
+    }
+
+    .meio-superior .um {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .meio-superior .dois {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .meio-inferior .um {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .meio-inferior .dois {
+        background-color: rgb(255, 0, 204);
+    }
+
+    .meio-inferior .tres {
+        background-color: rgb(255, 0, 204);
+    }
+
+</style>
+</head>
+<body>
+    <div class="site">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="um"></div>
+            <div class="dois"></div>
+            <div class="tres"></div>
+            <div class="quatro"></div>
+        </header>
+
+        <!-- Área do meio dividida -->
+        <div class="meio">
+            <!-- Parte superior com 2 divs -->
+            <div class="meio-superior">
+                <div class="um"></div>
+                <div class="dois"></div>
+            </div>
+
+            <!-- Parte inferior com 3 divs -->
+            <div class="meio-inferior">
+                <div class="um"></div>
+                <div class="dois"></div>
+                <div class="tres"></div>
+            </div>
+        </div>
+
+        <!-- Novo Footer -->
+        <footer>
+            <div class="um"></div>
+            <div class="dois"></div>
+            <div class="tres"></div>
+        </footer>
+
+        <!-- Divs verticais à esquerda -->
+        <div class="vertical-left">
+            <div class="um"></div>
+            <div class="dois"></div>
+            <div class="tres"></div>
+        </div>
+
+        <!-- Divs verticais à direita -->
+        <div class="vertical-right">
+            <div class="um"></div>
+            <div class="dois"></div>
+        </div>
+    </div>
+</body>
+</html>
