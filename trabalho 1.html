@@ -200,6 +200,41 @@
         background-color: rgb(255, 0, 204);
     }
 
+    /* Emojis nos cantos - Ajustado para centralizar entre as linhas */
+    .emoji {
+        font-size: 5rem; /* Aumenta o tamanho do emoji */
+        position: absolute;
+        z-index: 10;
+    }
+
+    /* Canto superior esquerdo */
+    .top-left {
+        top: 0;
+        left: 0;
+        transform: translate(30%, 30%); /* Ajusta a posição para centralizar entre as linhas */
+    }
+
+    /* Canto superior direito */
+    .top-right {
+        top: 0;
+        right: 0;
+        transform: translate(-30%, 30%); /* Ajusta a posição para centralizar entre as linhas */
+    }
+
+    /* Canto inferior esquerdo */
+    .bottom-left {
+        bottom: 0;
+        left: 0;
+        transform: translate(30%, -30%); /* Ajusta a posição para centralizar entre as linhas */
+    }
+
+    /* Canto inferior direito */
+    .bottom-right {
+        bottom: 0;
+        right: 0;
+        transform: translate(-30%, -30%); /* Ajusta a posição para centralizar entre as linhas */
+    }
+
 </style>
 </head>
 <body>
@@ -247,6 +282,12 @@
             <div class="um"></div>
             <div class="dois"></div>
         </div>
+
+        <!-- Emojis nos cantos -->
+        <div class="emoji top-left">🎀</div>
+        <div class="emoji top-right">🎀</div>
+        <div class="emoji bottom-left">🎀</div>
+        <div class="emoji bottom-right">🎀</div>
     </div>
 </body>
 </html>
